@@ -1,0 +1,2 @@
+# JenkinsAndriodDemo
+Jenkins自动构建的安卓demo
