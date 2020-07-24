@@ -3,13 +3,13 @@ apply plugin: 'com.android.application'
 android {
     signingConfigs {
         release {
-            storeFile file('testdemo.jks')
+            storeFile file('..\\testdemo.jks')
             storePassword 'aa123456'
             keyPassword 'aa123456'
             keyAlias 'key0'
         }
         debug {
-            storeFile file('testdemo.jks')
+            storeFile file('..\\testdemo.jks')
             storePassword 'aa123456'
             keyPassword 'aa123456'
             keyAlias 'key0'
