@@ -34,7 +34,7 @@ android {
                 outputFileName = "commonpop.apk"
             }
             if(variant.buildType.name.equals('release')){
-                outputFileName = "commonpop_${versionName}.apk"
+                outputFileName = "${date}.apk"
             }
         }
     }
