@@ -1,6 +1,20 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        release {
+            storeFile file('..\\Demo.jks')
+            storePassword 'a123456*'
+            keyPassword 'a123456*'
+            keyAlias 'key0'
+        }
+        debug {
+            storeFile file('..\\Demo.jks')
+            storePassword 'a123456*'
+            keyPassword 'a123456*'
+            keyAlias 'key0'
+        }
+    }
     compileSdkVersion 29
     buildToolsVersion "30.0.1"
 
@@ -12,6 +26,7 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.release
     }
 
     lintOptions {
